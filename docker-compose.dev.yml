@@ -1,0 +1,99 @@
+version: '3'
+
+services:
+
+  proxy:
+    container_name: bc-agent-proxy
+    build:
+      context: .
+      dockerfile: images/proxy/Dockerfile.dev
+    ports:
+      - "8000:80"
+    restart: always
+#    depends_on:
+#      - web-server
+#      - web-ui
+
+#  scanner-proxy:
+#    container_name: bc-agent-scanner-proxy-dev
+#    build:
+#      context: .
+#      dockerfile: images/fs_kkr_scanner_proxy/Dockerfile.dev
+#    volumes:
+#      - /Users/drodgers/Box:/home/bc_agent_scanner_proxy/data/scan_proxy/Users/drodgers/Box
+#    volumes:
+#      - /sentinel_api/node_modules
+#      - ./prometheus:/sentinel_api
+#    networks:
+#      - box-dev
+#    depends_on:
+#      - redis
+
+#  queue-admin:
+#    container_name: bc-agent-queues-admin-dev
+#    build:
+#      context: .
+#      dockerfile: images/queue_admin/Dockerfile
+#    ports:
+#      - 5555:5555
+#    depends_on:
+#      - redis
+
+#  task-worker:
+#    container_name: bc-agent-task-worker-dev
+#    build:
+#      context: .
+#      dockerfile: images/queue_task_worker/Dockerfile.dev
+#    networks:
+#      - box-dev
+#    depends_on:
+#      - redis
+#
+#  task-scheduler:
+#    container_name: bc-agent-task-scheduler-dev
+#    build:
+#      context: .
+#      dockerfile: images/queue_task_scheduler/Dockerfile.dev
+#    networks:
+#      - box-dev
+#    depends_on:
+#      - redis
+#
+#  redis:
+#    container_name: bc-agent-redis-dev
+#    image: redis
+#    networks:
+#      - box-dev
+#    ports:
+#      - 6379:6379
+#    volumes:
+#      - box-redis-data-dev:/data
+#    restart: always
+
+  web-server:
+    container_name: bc-agent-web-server-dev
+    build:
+      context: .
+      dockerfile: images/sentinel/Dockerfile.dev
+    volumes:
+      - ./prometheus:/home/bc_web_server
+    networks:
+      - box-dev
+
+  web-ui:
+    container_name: bc-agent-web-ui-dev
+    build:
+      context: .
+      dockerfile: images/web_gui/Dockerfile.dev
+    volumes:
+      - /home/bc_web_ui/node_modules
+      - ./prometheus/sentinel_ui:/home/bc_web_ui/sentinel_ui
+    networks:
+      - box-dev
+
+networks:
+  box-dev:
+    driver: "bridge"
+
+volumes:
+  box-redis-data-dev:

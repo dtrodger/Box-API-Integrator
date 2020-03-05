@@ -1,0 +1,15 @@
+env/
+__pycache__
+.DS_Store
+.idea/
+data/log/*.*.log
+data/log/*.log
+data/ethicalwalls_report/*.csv
+data/configuration/dev_docker.yml
+data/configuration/dev_local.yml
+data/file_system/kkr/audit_report/*.xlsx
+data/reports/*.csv
+celerybeat-schedule
+prometheus/sentinel_ui/node_modules
+prometheus/sentinel_ui/coverage
+prometheus/sentinel_ui/build

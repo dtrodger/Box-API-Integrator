@@ -1,0 +1,16 @@
+FROM python:3.7
+
+WORKDIR /home/fs_demo_scanner_proxy
+ENV PYTHONPATH "${PYTHONPATH}:/home/fs_demo_scanner_proxy"
+
+COPY requirements.txt .
+RUN pip install -r requirements.txt
+COPY . .
+RUN groupadd fs_demo_scanner_proxy_group && \
+    useradd -m -g fs_demo_scanner_proxy_group -s /bin/bash fs_demo_scanner_proxy && \
+    touch /home/fs_demo_scanner_proxy/data/log/fs_demo_scanner_proxy.info.log && \
+    touch /home/fs_demo_scanner_proxy/data/log/fs_demo_scanner_proxy.error.log && \
+    chown -R fs_demo_scanner_proxy:fs_demo_scanner_proxy_group /home/fs_demo_scanner_proxy
+
+USER fs_demo_scanner_proxy
+CMD ["python", "bc_agent/cli", "fs-demo-scanner-proxy", "-c", "dev_docker"]

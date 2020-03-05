@@ -1,0 +1,88 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<root>
+<!--    &lt;!&ndash; Tests happy path at root level of monitored folder&ndash;&gt;-->
+    <document>
+        <field   level = "system" name = "Document location" value = "C:\Users\FileroomNY\Downloads\"/>
+        <field   level = "system" name = "Document ID" value = "1"/>
+        <field   level = "system" name = "Image count in document" value = "229"/>
+        <field   level = "system" name = "Page count in document" value = "203"/>
+        <field   level = "document" name = "Barcode Value" value = "000000000"/>
+        <field   level = "document" name = "Scan File Path" value = "/Users/drodgers/Projects/kkr-file-system-monitor/data/scan_proxy/Users/"/>
+        <field   level = "document" name = "Scan File Name" value = "test_root_folder"/>
+        <field   level = "document" name = "Document Type" value = "All - Personal"/>
+        <field   level = "document" name = "SharePoint ID" value = "9999"/>
+        <field   level = "document" name = "Requester Email" value = "drodgers+demo@boxdemo.com"/>
+    </document>
+
+    <!-- Tests happy path at nested level of monitored folder-->
+    <document>
+        <field   level = "system" name = "Document location" value = "C:/Users/drodgers/Projects/box-consulting-agent/data/scanner_proxy/kkr_file_system/Users/drodgers/Box/"/>
+        <field   level = "system" name = "Document ID" value = "1"/>
+        <field   level = "system" name = "Image count in document" value = "229"/>
+        <field   level = "system" name = "Page count in document" value = "203"/>
+        <field   level = "document" name = "Barcode Value" value = "000000000"/>
+        <field   level = "document" name = "Scan File Path" value = "https://app.box.com/folder/96366068351"/>
+        <field   level = "document" name = "Scan File Name" value = "test.pdf"/>
+        <field   level = "document" name = "Document Type" value = "All - Persona"/>
+        <field   level = "document" name = "SharePoint ID" value = "9999"/>
+        <field   level = "document" name = "Requester Email" value = "drodgers+steve@boxdemo.com"/>
+    </document>
+
+    <document>
+        <field   level = "system" name = "Document location" value = "C:/Users/drodgers/Projects/kkr-file-system-monitor/data/scan_proxy/Users/drodgers/Box/"/>
+        <field   level = "system" name = "Document ID" value = "1"/>
+        <field   level = "system" name = "Image count in document" value = "4"/>
+        <field   level = "system" name = "Page count in document" value = "2"/>
+        <field   level = "document" name = "Barcode Value" value = "6321772771"/>
+        <field   level = "document" name = "Scan File Path" value = "C:/Users/FileroomNY/Box/kkr_nested/"/>
+        <field   level = "document" name = "Scan File Name" value = "test.pdf"/>
+        <field   level = "document" name = "Document Type" value = "Finance - Accounting Records"/>
+        <field   level = "document" name = "SharePoint ID" value = "338"/>
+        <field   level = "document" name = "Requester Email" value = "drodgers+demo@boxdemo.com"/>
+        <field   level = "document" name = "Requester Username" value = "purom"/>
+        <field   level = "document" name = "Requested on Behalf of" value = ""/>
+        <field   level = "document" name = "Requester Department" value = "Office Operations"/>
+    </document>
+
+    <!-- Tests non exist Box user in Requester Email -->
+    <document>
+        <field   level = "system" name = "Document location" value = "C:\Users\FileroomNY\Downloads\"/>
+        <field   level = "system" name = "Document ID" value = "2"/>
+        <field   level = "system" name = "Image count in document" value = "224"/>
+        <field   level = "system" name = "Page count in document" value = "204"/>
+        <field   level = "document" name = "Barcode Value" value = "000000000"/>
+        <field   level = "document" name = "Scan File Path" value = "/Users/drodgers/Projects/kkr-file-system-monitor/data/Users/"/>
+        <field   level = "document" name = "Scan File Name" value = "DeerfieldVillage"/>
+        <field   level = "document" name = "Document Type" value = "All - Personal"/>
+        <field   level = "document" name = "SharePoint ID" value = "9999"/>
+        <field   level = "document" name = "Requester Email" value = "a@b.com"/>
+    </document>
+
+    <!-- Tests non exist Box folder path in Scan File Path -->
+    <document>
+        <field   level = "system" name = "Document location" value = "C:\Users\FileroomNY\Downloads\"/>
+        <field   level = "system" name = "Document ID" value = "3"/>
+        <field   level = "system" name = "Image count in document" value = "191"/>
+        <field   level = "system" name = "Page count in document" value = "175"/>
+        <field   level = "document" name = "Barcode Value" value = "000000000"/>
+        <field   level = "document" name = "Scan File Path" value = "/Users/drodgers/Projects/bananas/"/>
+        <field   level = "document" name = "Scan File Name" value = "Alpine Way"/>
+        <field   level = "document" name = "Document Type" value = "All - Personal"/>
+        <field   level = "document" name = "SharePoint ID" value = "9999"/>
+        <field   level = "document" name = "Requester Email" value = "slin+kkr-fsm-dev@boxdemo.com"/>
+    </document>
+
+    <!-- Tests non exist Box user in Requester Email and Box folder path in Scan File Path -->
+    <document>
+        <field   level = "system" name = "Document location" value = "C:\Users\FileroomNY\Downloads\"/>
+        <field   level = "system" name = "Document ID" value = "3"/>
+        <field   level = "system" name = "Image count in document" value = "191"/>
+        <field   level = "system" name = "Page count in document" value = "175"/>
+        <field   level = "document" name = "Barcode Value" value = "000000000"/>
+        <field   level = "document" name = "Scan File Path" value = "/Users/drodgers/Projects/bananas/"/>
+        <field   level = "document" name = "Scan File Name" value = "Alpine Way"/>
+        <field   level = "document" name = "Document Type" value = "All - Personal"/>
+        <field   level = "document" name = "SharePoint ID" value = "9999"/>
+        <field   level = "document" name = "Requester Email" value = "a@b.c"/>
+    </document>
+</root>

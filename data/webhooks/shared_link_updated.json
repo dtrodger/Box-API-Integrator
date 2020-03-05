@@ -1,0 +1,48 @@
+{
+    "version": "0",
+    "id": "d3da3cce-53e4-3e39-ce1b-627b8d6065a7",
+    "detail-type": "Webhook V2",
+    "source": "Box",
+    "account": "537695493153",
+    "time": "2020-02-09T04:51:00Z",
+    "region": "us-west-2",
+    "resources": [],
+    "detail": {
+        "type": "webhook_event",
+        "id": "895aa354-9ac9-4ec1-9cc1-9129c52bfdf4",
+        "created_at": "2020-02-08T20:50:59-08:00",
+        "trigger": "SHARED_LINK.UPDATED",
+        "webhook": {
+            "id": "264673005",
+            "type": "webhook"
+        },
+        "created_by": {
+            "type": "user",
+            "id": "133727",
+            "name": "randyjohnston@gmail.com",
+            "login": "randyjohnston@gmail.com"
+        },
+        "source": {
+            "type": "shared",
+            "url": "https://app.box.com/s/np7nxirelipy4le0jn1bg50lvxzyw7jg",
+            "download_url": "https://app.box.com/shared/static/np7nxirelipy4le0jn1bg50lvxzyw7jg.json",
+            "vanity_url": null,
+            "effective_access": "collaborators",
+            "effective_permission": "can_preview",
+            "is_password_enabled": false,
+            "unshared_at": null,
+            "download_count": 0,
+            "preview_count": 0,
+            "access": "collaborators",
+            "permissions": {
+                "can_preview": true,
+                "can_download": false
+            },
+            "item": {
+                "id": "613727930549",
+                "type": "file"
+            }
+        },
+        "additional_info": []
+    }
+}

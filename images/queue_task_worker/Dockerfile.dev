@@ -1,0 +1,16 @@
+FROM python:3.7
+
+WORKDIR /home/bc_agent_task_worker
+ENV PYTHONPATH "${PYTHONPATH}:/home/bc_agent_task_worker"
+
+COPY requirements.txt .
+RUN pip install -r requirements.txt
+COPY . .
+RUN groupadd bc_agent_task_worker_group && \
+    useradd -m -g bc_agent_task_worker_group -s /bin/bash bc_agent_task_worker && \
+    touch /home/bc_agent_task_worker/data/log/bc_agent_task_worker.info.log && \
+    touch /home/bc_agent_task_worker/data/log/bc_agent_task_worker.error.log && \
+    chown -R bc_agent_task_worker:bc_agent_task_worker_group /home/bc_agent_task_worker
+
+USER bc_agent_task_worker
+CMD ["python", "bc_agent/cli", "queue-task-worker", "-c", "dev_docker"]

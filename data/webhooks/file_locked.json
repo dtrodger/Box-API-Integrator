@@ -1,0 +1,101 @@
+{
+    "version": "0",
+    "id": "946dd607-cdaf-f355-364c-c8c7e54cfedc",
+    "detail-type": "Webhook V2",
+    "source": "Box",
+    "account": "537695493153",
+    "time": "2020-02-09T04:36:21Z",
+    "region": "us-west-2",
+    "resources": [],
+    "detail": {
+        "type": "webhook_event",
+        "id": "c7313994-b74a-4ba9-bffc-fe3e480e4d3b",
+        "created_at": "2020-02-08T20:36:20-08:00",
+        "trigger": "FILE.LOCKED",
+        "webhook": {
+            "id": "264673005",
+            "type": "webhook"
+        },
+        "created_by": {
+            "type": "user",
+            "id": "133727",
+            "name": "randyjohnston@gmail.com",
+            "login": "randyjohnston@gmail.com"
+        },
+        "source": {
+            "id": "613727930549",
+            "type": "file",
+            "file_version": {
+                "type": "file_version",
+                "id": "650561295749",
+                "sha1": "4dda6612617c62af06c5173f38f98eccfd640c91"
+            },
+            "sequence_id": "0",
+            "etag": "0",
+            "sha1": "4dda6612617c62af06c5173f38f98eccfd640c91",
+            "name": "events.json",
+            "description": "",
+            "size": 447723,
+            "path_collection": {
+                "total_count": 3,
+                "entries": [
+                    {
+                        "type": "folder",
+                        "id": "0",
+                        "sequence_id": null,
+                        "etag": null,
+                        "name": "All Files"
+                    },
+                    {
+                        "type": "folder",
+                        "id": "102941234463",
+                        "sequence_id": "0",
+                        "etag": "0",
+                        "name": "Webhooks testing"
+                    },
+                    {
+                        "type": "folder",
+                        "id": "102941292100",
+                        "sequence_id": "0",
+                        "etag": "0",
+                        "name": "webhook test"
+                    }
+                ]
+            },
+            "created_at": "2020-02-08T20:29:14-08:00",
+            "modified_at": "2020-02-08T20:29:14-08:00",
+            "trashed_at": null,
+            "purged_at": null,
+            "content_created_at": "2020-02-08T12:22:14-08:00",
+            "content_modified_at": "2020-02-08T12:22:14-08:00",
+            "created_by": {
+                "type": "user",
+                "id": "133727",
+                "name": "randyjohnston@gmail.com",
+                "login": "randyjohnston@gmail.com"
+            },
+            "modified_by": {
+                "type": "user",
+                "id": "133727",
+                "name": "randyjohnston@gmail.com",
+                "login": "randyjohnston@gmail.com"
+            },
+            "owned_by": {
+                "type": "user",
+                "id": "133727",
+                "name": "randyjohnston@gmail.com",
+                "login": "randyjohnston@gmail.com"
+            },
+            "shared_link": null,
+            "parent": {
+                "type": "folder",
+                "id": "102941292100",
+                "sequence_id": "0",
+                "etag": "0",
+                "name": "webhook test"
+            },
+            "item_status": "active"
+        },
+        "additional_info": []
+    }
+}

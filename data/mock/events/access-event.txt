@@ -1,0 +1,27 @@
+{
+    u'event_type': u'PREVIEW',
+    u'event_id': u'3d8bfdc9-9adf-452f-af6d-6e0308e94b89',
+    u'type': u'event',
+    u'created_at': u'2016-09-19T10:06:37-07:00',
+    u'created_by': {
+        u'login': u'jrael+demo@box.com',
+        u'type': u'user',
+        u'id': u'281280449',
+        u'name': u'Josh Rael',
+        },
+    u'source': {
+        u'item_id': u'69936612097',
+        u'item_type': u'file',
+        u'parent': {u'type': u'folder', u'name': u'All Files',
+                    u'id': u'0'},
+        u'item_name': u'GettingStartedwithTA.pptx',
+        },
+    u'session_id': None,
+    u'additional_details': {
+        u'service_id': u'61335',
+        u'service_name': u'Box Web App',
+        u'version_id': u'73763915101',
+        u'size': 352232,
+        },
+    u'ip_address': u'Unknown IP',
+    }

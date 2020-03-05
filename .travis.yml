@@ -1,0 +1,23 @@
+language: generic
+sudo: required
+services:
+  - docker
+
+before_install:
+  - docker build -t boxconsulting/box-agent-test -f Dockerfile.dev .
+
+script:
+  - docker run -e CI=true boxconsulting/kkr-box-agent npm run test
+
+deploy:
+  provider: elasticbeanstalk
+  region: "us-east-1"
+  app: "docker-react"
+  env: "KKRBoxAgent-env"
+  bucket_name: "elasticbeanstalk-us-east-1-003903245551"
+  bucket_path: "docker-react"
+  on:
+    branch: master
+  access_key_id: "$AWS_ACCESS_KEY"
+  secret_access_key:
+    secure: "$AWS_SECRET_ACCESS_KEY"

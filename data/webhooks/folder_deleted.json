@@ -1,0 +1,31 @@
+{
+    "version": "0",
+    "id": "929c840e-8dcf-859e-8755-4216289463f0",
+    "detail-type": "Webhook V2",
+    "source": "Box",
+    "account": "537695493153",
+    "time": "2020-02-19T22:58:35Z",
+    "region": "us-west-2",
+    "resources": [],
+    "detail": {
+        "type": "webhook_event",
+        "id": "cf26a5a6-c12f-426b-aec7-460c29a356d3",
+        "created_at": "2020-02-19T14:58:34-08:00",
+        "trigger": "FOLDER.DELETED",
+        "webhook": {
+            "id": "264673005",
+            "type": "webhook"
+        },
+        "created_by": {
+            "type": "user",
+            "id": "7377333001",
+            "name": "Randy Demo",
+            "login": "rjohnston@boxdemo.com"
+        },
+        "source": {
+            "id": "102941672967",
+            "type": "folder"
+        },
+        "additional_info": []
+    }
+}

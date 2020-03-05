@@ -1,0 +1,45 @@
+{
+    "version": "0",
+    "id": "2f4862d1-c340-db68-4513-69a219003c47",
+    "detail-type": "Webhook V2",
+    "source": "Box",
+    "account": "537695493153",
+    "time": "2020-02-09T04:37:59Z",
+    "region": "us-west-2",
+    "resources": [],
+    "detail": {
+        "type": "webhook_event",
+        "id": "117b7f15-f69b-4bc2-b054-bf67c141a062",
+        "created_at": "2020-02-08T20:37:58-08:00",
+        "trigger": "COMMENT.UPDATED",
+        "webhook": {
+            "id": "264673005",
+            "type": "webhook"
+        },
+        "created_by": {
+            "type": "user",
+            "id": "133727",
+            "name": "randyjohnston@gmail.com",
+            "login": "randyjohnston@gmail.com"
+        },
+        "source": {
+            "id": "302789792",
+            "type": "comment",
+            "is_reply_comment": false,
+            "message": "updated comment",
+            "created_by": {
+                "type": "user",
+                "id": "133727",
+                "name": "randyjohnston@gmail.com",
+                "login": "randyjohnston@gmail.com"
+            },
+            "created_at": "2020-02-08T20:37:50-08:00",
+            "item": {
+                "id": "613723402707",
+                "type": "file"
+            },
+            "modified_at": "2020-02-08T20:37:58-08:00"
+        },
+        "additional_info": []
+    }
+}

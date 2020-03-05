@@ -1,0 +1,16 @@
+FROM python:3.7
+
+WORKDIR /home/bc_web_server
+ENV PYTHONPATH "${PYTHONPATH}:/home/bc_web_server"
+
+COPY requirements.txt .
+RUN pip install -r requirements.txt
+COPY . .
+RUN groupadd bc_web_server_group && \
+    useradd -m -g bc_web_server_group -s /bin/bash bc_web_server && \
+    touch /home/bc_web_server/data/log/bc_web_server.info.log && \
+    touch /home/bc_web_server/data/log/bc_web_server.error.log && \
+    chown -R bc_web_server:bc_web_server_group /home/bc_web_server
+
+USER bc_web_server
+CMD ["python", "bc_agent/cli", "sentinel-server", "-c", "dev_docker"]

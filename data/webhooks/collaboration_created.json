@@ -1,0 +1,57 @@
+{
+    "version": "0",
+    "id": "8caae3e9-678c-2a05-f00c-eed560b7fdc4",
+    "detail-type": "Webhook V2",
+    "source": "Box",
+    "account": "537695493153",
+    "time": "2020-02-09T04:48:09Z",
+    "region": "us-west-2",
+    "resources": [],
+    "detail": {
+        "type": "webhook_event",
+        "id": "35cda911-5410-4d44-aae2-b7ddc33cec26",
+        "created_at": "2020-02-08T20:48:07-08:00",
+        "trigger": "COLLABORATION.CREATED",
+        "webhook": {
+            "id": "264673005",
+            "type": "webhook"
+        },
+        "created_by": {
+            "type": "user",
+            "id": "133727",
+            "name": "randyjohnston@gmail.com",
+            "login": "randyjohnston@gmail.com"
+        },
+        "source": {
+            "id": "19383184347",
+            "type": "collaboration",
+            "created_by": {
+                "type": "user",
+                "id": "133727",
+                "name": "randyjohnston@gmail.com",
+                "login": "randyjohnston@gmail.com"
+            },
+            "created_at": "2020-02-08T20:48:07-08:00",
+            "modified_at": "2020-02-08T20:48:07-08:00",
+            "expires_at": null,
+            "status": "accepted",
+            "accessible_by": {
+                "type": "user",
+                "id": "7377333001",
+                "name": "Randy Demo",
+                "login": "rjohnston@boxdemo.com"
+            },
+            "invite_email": null,
+            "role": "editor",
+            "acknowledged_at": "2020-02-08T20:48:07-08:00",
+            "item": {
+                "type": "folder",
+                "id": "102941292100",
+                "sequence_id": "0",
+                "etag": "0",
+                "name": "webhook test"
+            }
+        },
+        "additional_info": []
+    }
+}

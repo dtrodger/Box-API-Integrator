@@ -1,0 +1,16 @@
+FROM python:3.7
+
+WORKDIR /home/bc_agent_task_scheduler
+ENV PYTHONPATH "${PYTHONPATH}:/home/bc_agent_task_scheduler"
+
+COPY requirements.txt .
+RUN pip install -r requirements.txt
+COPY . .
+RUN groupadd bc_agent_task_scheduler_group && \
+    useradd -m -g bc_agent_task_scheduler_group -s /bin/bash bc_agent_task_scheduler && \
+    touch /home/bc_agent_task_scheduler/data/log/bc_agent_task_scheduler.info.log && \
+    touch /home/bc_agent_task_scheduler/data/log/bc_agent_task_scheduler.error.log && \
+    chown -R bc_agent_task_scheduler:bc_agent_task_scheduler_group /home/bc_agent_task_scheduler
+
+USER bc_agent_task_scheduler
+CMD ["python", "bc_agent/cli", "queue-task-scheduler", "-c", "dev_docker"]

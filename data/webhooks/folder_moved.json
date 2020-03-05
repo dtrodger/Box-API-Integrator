@@ -1,0 +1,112 @@
+{
+    "version": "0",
+    "id": "d268c0db-5853-6537-052d-eb7628b71ee9",
+    "detail-type": "Webhook V2",
+    "source": "Box",
+    "account": "537695493153",
+    "time": "2020-02-19T22:59:33Z",
+    "region": "us-west-2",
+    "resources": [],
+    "detail": {
+        "type": "webhook_event",
+        "id": "861e144c-1f01-4d12-98ac-99910643765b",
+        "created_at": "2020-02-19T14:59:33-08:00",
+        "trigger": "FOLDER.MOVED",
+        "webhook": {
+            "id": "264673005",
+            "type": "webhook"
+        },
+        "created_by": {
+            "type": "user",
+            "id": "7377333001",
+            "name": "Randy Demo",
+            "login": "rjohnston@boxdemo.com"
+        },
+        "source": {
+            "id": "104069735063",
+            "type": "folder",
+            "sequence_id": "1",
+            "etag": "1",
+            "name": "folder-to-move",
+            "created_at": "2020-02-19T14:59:14-08:00",
+            "modified_at": "2020-02-19T14:59:14-08:00",
+            "description": "",
+            "size": 0,
+            "path_collection": {
+                "total_count": 4,
+                "entries": [
+                    {
+                        "type": "folder",
+                        "id": "0",
+                        "sequence_id": null,
+                        "etag": null,
+                        "name": "All Files"
+                    },
+                    {
+                        "type": "folder",
+                        "id": "102941234463",
+                        "sequence_id": "0",
+                        "etag": "0",
+                        "name": "Webhooks testing"
+                    },
+                    {
+                        "type": "folder",
+                        "id": "102941292100",
+                        "sequence_id": "0",
+                        "etag": "0",
+                        "name": "webhook test"
+                    },
+                    {
+                        "type": "folder",
+                        "id": "104068840833",
+                        "sequence_id": "0",
+                        "etag": "0",
+                        "name": "target-folder"
+                    }
+                ]
+            },
+            "created_by": {
+                "type": "user",
+                "id": "7377333001",
+                "name": "Randy Demo",
+                "login": "rjohnston@boxdemo.com"
+            },
+            "modified_by": {
+                "type": "user",
+                "id": "7377333001",
+                "name": "Randy Demo",
+                "login": "rjohnston@boxdemo.com"
+            },
+            "trashed_at": null,
+            "purged_at": null,
+            "content_created_at": "2020-02-19T14:59:14-08:00",
+            "content_modified_at": "2020-02-19T14:59:14-08:00",
+            "owned_by": {
+                "type": "user",
+                "id": "133727",
+                "name": "randyjohnston@gmail.com",
+                "login": "randyjohnston@gmail.com"
+            },
+            "shared_link": null,
+            "folder_upload_email": null,
+            "parent": {
+                "type": "folder",
+                "id": "104068840833",
+                "sequence_id": "0",
+                "etag": "0",
+                "name": "target-folder"
+            },
+            "item_status": "active"
+        },
+        "additional_info": {
+            "after": {
+                "id": "104068840833",
+                "type": "folder"
+            },
+            "before": {
+                "id": "102941292100",
+                "type": "folder"
+            }
+        }
+    }
+}

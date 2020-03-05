@@ -1,0 +1,96 @@
+{
+    "version": "0",
+    "id": "9c03de4c-dad8-d3d4-d76d-3d2390e166ac",
+    "detail-type": "Webhook V2",
+    "source": "Box",
+    "account": "537695493153",
+    "time": "2020-02-09T04:45:08Z",
+    "region": "us-west-2",
+    "resources": [],
+    "detail": {
+        "type": "webhook_event",
+        "id": "205d2790-75f1-4b91-b707-28821ac758c2",
+        "created_at": "2020-02-08T20:45:07-08:00",
+        "trigger": "FOLDER.RESTORED",
+        "webhook": {
+            "id": "264673005",
+            "type": "webhook"
+        },
+        "created_by": {
+            "type": "user",
+            "id": "133727",
+            "name": "randyjohnston@gmail.com",
+            "login": "randyjohnston@gmail.com"
+        },
+        "source": {
+            "id": "102941596492",
+            "type": "folder",
+            "sequence_id": "2",
+            "etag": "2",
+            "name": "rename folder (1)",
+            "created_at": "2020-02-08T20:44:50-08:00",
+            "modified_at": "2020-02-08T20:44:50-08:00",
+            "description": "",
+            "size": 0,
+            "path_collection": {
+                "total_count": 3,
+                "entries": [
+                    {
+                        "type": "folder",
+                        "id": "0",
+                        "sequence_id": null,
+                        "etag": null,
+                        "name": "All Files"
+                    },
+                    {
+                        "type": "folder",
+                        "id": "102941234463",
+                        "sequence_id": "0",
+                        "etag": "0",
+                        "name": "Webhooks testing"
+                    },
+                    {
+                        "type": "folder",
+                        "id": "102941292100",
+                        "sequence_id": "0",
+                        "etag": "0",
+                        "name": "webhook test"
+                    }
+                ]
+            },
+            "created_by": {
+                "type": "user",
+                "id": "133727",
+                "name": "randyjohnston@gmail.com",
+                "login": "randyjohnston@gmail.com"
+            },
+            "modified_by": {
+                "type": "user",
+                "id": "133727",
+                "name": "randyjohnston@gmail.com",
+                "login": "randyjohnston@gmail.com"
+            },
+            "trashed_at": null,
+            "purged_at": null,
+            "content_created_at": "2020-02-08T20:44:50-08:00",
+            "content_modified_at": "2020-02-08T20:44:50-08:00",
+            "owned_by": {
+                "type": "user",
+                "id": "133727",
+                "name": "randyjohnston@gmail.com",
+                "login": "randyjohnston@gmail.com"
+            },
+            "shared_link": null,
+            "folder_upload_email": null,
+            "parent": {
+                "type": "folder",
+                "id": "102941292100",
+                "sequence_id": "0",
+                "etag": "0",
+                "name": "webhook test"
+            },
+            "item_status": "active"
+        },
+        "additional_info": []
+    }
+}

@@ -1,0 +1,16 @@
+FROM python:3.7
+
+WORKDIR /home/bc_web_ui
+ENV PYTHONPATH "${PYTHONPATH}:/home/bc_web_ui"
+
+COPY requirements.txt .
+RUN pip install -r requirements.txt
+COPY . .
+RUN groupadd bc_web_ui_group && \
+    useradd -m -g bc_web_ui_group -s /bin/bash bc_web_ui && \
+    touch /home/bc_web_ui/data/log/bc_web_ui.info.log && \
+    touch /home/bc_web_ui/data/log/bc_web_ui.error.log && \
+    chown -R bc_web_ui:bc_web_ui_group /home/bc_web_ui
+
+USER bc_web_ui
+CMD ["python", "bc_agent/cli", "run-web-ui", "-c", "dev_docker"]

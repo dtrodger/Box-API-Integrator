@@ -1,0 +1,31 @@
+{
+    "version": "0",
+    "id": "2a7b4274-c7e3-bcd9-e2e8-3286ee8c17e7",
+    "detail-type": "Webhook V2",
+    "source": "Box",
+    "account": "537695493153",
+    "time": "2020-02-09T04:35:32Z",
+    "region": "us-west-2",
+    "resources": [],
+    "detail": {
+        "type": "webhook_event",
+        "id": "11527c19-7c8f-41e1-b71a-b66afcc45039",
+        "created_at": "2020-02-08T20:35:30-08:00",
+        "trigger": "FILE.TRASHED",
+        "webhook": {
+            "id": "264673005",
+            "type": "webhook"
+        },
+        "created_by": {
+            "type": "user",
+            "id": "133727",
+            "name": "randyjohnston@gmail.com",
+            "login": "randyjohnston@gmail.com"
+        },
+        "source": {
+            "id": "613728243351",
+            "type": "file"
+        },
+        "additional_info": []
+    }
+}

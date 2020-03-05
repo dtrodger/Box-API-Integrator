@@ -1,0 +1,35 @@
+{
+    u'event_type': u'COLLABORATION_INVITE',
+    u'event_id': u'2d4b7f9f-01da-437a-a39a-519e683d60b1',
+    u'type': u'event',
+    u'created_at': u'2017-08-07T15:20:22-07:00',
+    u'created_by': {
+        u'login': u'jrael+demo@box.com',
+        u'type': u'user',
+        u'id': u'281280449',
+        u'name': u'Josh Rael',
+        },
+    u'source': {
+        u'user_name': u'Tony',
+        u'user_id': u'281303585',
+        u'folder_id': u'34280093248',
+        u'parent': {u'type': u'folder',
+                    u'name': u'General Company Files 2',
+                    u'id': u'34280077507'},
+        u'folder_name': u'_Resources Folder (For Demo Set Up)_ (1)',
+        },
+    u'session_id': None,
+    u'additional_details': {
+        u'collab_id': u'8665688560',
+        u'role': u'Editor',
+        u'type': u'box://event/additional_details/collaboration',
+        u'is_performed_by_admin': False,
+        },
+    u'accessible_by': {
+        u'login': u'jrael+tony@box.com',
+        u'type': u'user',
+        u'id': u'281303585',
+        u'name': u'Tony',
+        },
+    u'ip_address': u'Unknown IP',
+    }
