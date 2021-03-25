@@ -64,7 +64,7 @@ et_xmlfile = "==1.0.1"
 PyInstaller = "==3.3.1"
 PyJWT = "==1.6.1"
 pyOpenSSL = "==19.1.0"
-PyYAML = "==5.2"
+PyYAML = "==5.4"
 service_identity = "==18.1.0"
 
 [requires]
