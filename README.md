@@ -26,7 +26,6 @@ Prometheus is a Python template project with utilities like
 ## Application Architecture ##
 
 ### Domain Model ###
-Object oriented programming layer defining a conceptual model of the business domain that incorporates behaviour and state
 
 Box Client
 - boxsdk.Client - REST client interface into Box Platform APIs
